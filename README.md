@@ -1,3 +1,3 @@
 # ProjectWebsite
 
-This is a github repository
+This is a github repository.
