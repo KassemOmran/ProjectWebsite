@@ -24,6 +24,11 @@
             min-height: 100vh;
             margin: 0;
         }
+
+        .custom-main {
+            position: relative;
+        }
+
     </style>
     <title>Document</title>
 </head>
@@ -51,36 +56,54 @@
                     <a class="nav-link link-light" href="contact-us.html">Contact Us</a>
                 </li>
             </ul>
-
             <a href="login.html"><button type="button" class="btn btn-primary">Login</button></a>
-
-
-
         </div>
     </div>
     <div class="d-flex flex-row justify-content-between h-100">
-        <div class="container w-75">
-            ff
-            <button type="button" class="btn btn-primary d-block d-md-none ">hello</button>
+        <div class="custom-main container w-md-75 pt-3 text-white">
+            <h1 class="text-center">Student Profile</h1>
+            <div class= "d-flex flex-row justify-content-center align-items-center gap-3 pt-3 bg-dark rounded-3 p-1">
+                <img src="images/user.png" alt="student" class="img-fluid rounded-circle w-sm-25 h-sm-25"
+                    style="max-width: 100px; height: auto;">
+                <div class="d-flex flex-column justify-content-center align-items-start ">
+                    <p>Student Name: اسم الطالب الثلاثي</p>
+                    <p>Student ID: 123456</p>
+                    <p>Student Major: Computer Science</p>
+                    <p>Education Year: L2</p>
+                </div>
+                <button type="button" id="sidebar-button"
+                    class="btn btn-dark position-absolute top-0 end-0 m-1 d-block d-md-none "
+                    style="background:none; border: none;"><img src="images/menu-black.png" alt="" style="width: 40px;">
+                </button>
+            </div>
+
+            
         </div>
-        
-        <div class="container w-25  bg-dark pb-3 d-none d-md-block ">
-            <ul class="nav flex-column">
+        <div id="sidebar" class="container w-25 bg-dark d-none d-md-block">
+            <ul class="nav flex-column gap-3 pt-3">
                 <li class="nav-item">
-                    <a class="nav-link link-light" href="#">Profile</a></li>
+                    <a class="nav-link link-primary active" aria-current="page"
+                        href="student-interface.html">Profile</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link link-light" href="#">Courses</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-light" href="#">Marks</a>
                 </li>
-
         </div>
     </div>
-    </div>
 
 
 
+    <script>
+        document.getElementById('sidebar-button').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('d-none');
+            document.getElementById('sidebar').classList.remove('w-25');
+            document.getElementsByClassName('content').classList.remove('d-flex');
+            document.getElementsByClassName('content').classList.toggle('d-none');
+        });
+    </script>
 </body>
 
 </html>
