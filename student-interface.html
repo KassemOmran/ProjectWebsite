@@ -25,7 +25,10 @@
             margin: 0;
         }
 
-        .custom-main {
+        #custom-main {
+            position: relative;
+        }
+        #sidebar {
             position: relative;
         }
 
@@ -60,9 +63,9 @@
         </div>
     </div>
     <div class="d-flex flex-row justify-content-between h-100">
-        <div class="custom-main container w-md-75 pt-3 text-white">
-            <h1 class="text-center">Student Profile</h1>
-            <div class= "d-flex flex-row justify-content-center align-items-center gap-3 pt-3 bg-dark rounded-3 p-1">
+        <div id="custom-main" class=" container w-md-75 pt-3 text-white ">
+            <h1 class="text-center" style="font-family: Arial, sans-serif;font-weight: 300;">Student Profile</h1>
+            <div class= "d-flex flex-row justify-content-center align-items-center gap-3 pt-3 bg-dark rounded-3 p-1 mt-3">
                 <img src="images/user.png" alt="student" class="img-fluid rounded-circle w-sm-25 h-sm-25"
                     style="max-width: 100px; height: auto;">
                 <div class="d-flex flex-column justify-content-center align-items-start ">
@@ -79,8 +82,12 @@
 
             
         </div>
-        <div id="sidebar" class="container w-25 bg-dark d-none d-md-block">
+        <div id="sidebar" class="container w-25 bg-dark d-none d-md-block mw-50">
             <ul class="nav flex-column gap-3 pt-3">
+                <button type="button" id="sidebar-button2"
+                    class="btn btn-dark position-absolute top-0 end-0 m-1 d-block d-md-none "
+                    style="background:none; border: none;"><img src="images/menu-black.png" alt="" style="width: 40px;">
+                </button>
                 <li class="nav-item">
                     <a class="nav-link link-primary active" aria-current="page"
                         href="student-interface.html">Profile</a>
@@ -99,9 +106,14 @@
     <script>
         document.getElementById('sidebar-button').addEventListener('click', function () {
             document.getElementById('sidebar').classList.toggle('d-none');
-            document.getElementById('sidebar').classList.remove('w-25');
-            document.getElementsByClassName('content').classList.remove('d-flex');
-            document.getElementsByClassName('content').classList.toggle('d-none');
+            document.getElementById('sidebar').classList.toggle('w-25');
+            document.getElementById('custom-main').classList.add('d-none');
+        });
+        document.getElementById('sidebar-button2').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('w-25');
+            document.getElementById('sidebar').classList.toggle('d-none');
+            
+            document.getElementById('custom-main').classList.remove('d-none');
         });
     </script>
 </body>
