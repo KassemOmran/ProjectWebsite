@@ -17,90 +17,107 @@
 
         body {
             background-repeat: no-repeat;
-            background-image: url('images/ULFS-HadathCampusBldgback.jpg');
+            background-image: url('images/ULFS-HadathCampusBldgback1.1.jpg');
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
             min-height: 100vh;
             margin: 0;
+            display: flex;
+            flex-direction: column;
         }
 
-        #custom-main {
-            position: relative;
+        .heading {
+            font-weight: lighter;
+            font-size: 40px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
         }
+
+        
+
         #sidebar {
-            position: relative;
+            height: 100vh;
         }
-
+        main{
+            flex:1;
+        }
     </style>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container-fluid text-white p-2 p-md-3" style="background-color:#1c3b7d;">
-        <div class="d-flex justify-content-start flex-row align-items-center gap-3 p-2">
-            <img src="images/science.jpg" alt="Faculty-logo" class=" img-fluid rounded-circle w-sm-25 h-sm-25"
-                style="max-width: 100px; height: auto;">
-            <div class="d-flex justify-content-center flex-column align-items-start">
-                <h1 class="d-none d-sm-block">Lebanese University</h1>
-                <h2 class="d-none d-sm-block">Faculty of Sciences - I</h2>
+    <main>
+        <div class="container-fluid text-white p-2 p-md-3" style="background-color:#1c3b7d;">
+            <div class="d-flex justify-content-start flex-row align-items-center gap-3 p-2">
+                <img src="images/science.jpg" alt="Faculty-logo" class=" img-fluid rounded-circle w-sm-25 h-sm-25"
+                    style="max-width: 100px; height: auto;">
+                <div class="d-flex justify-content-center flex-column align-items-start">
+                    <h1 class="d-none d-sm-block">Lebanese University</h1>
+                    <h2 class="d-none d-sm-block">Faculty of Sciences - I</h2>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+                <ul class="nav nav-underline ">
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light active" aria-current="page" href="student-interface.html">Student
+                            Interface</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="login.html"><button type="button" class="btn btn-primary">Login</button></a>
             </div>
         </div>
         <div class="d-flex flex-row justify-content-between">
-            <ul class="nav nav-underline ">
-                <li class="nav-item">
-                    <a class="nav-link link-light" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-light active" aria-current="page" href="student-interface.html">Student
-                        Interface</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-light" href="contact-us.html">Contact Us</a>
-                </li>
-            </ul>
-            <a href="login.html"><button type="button" class="btn btn-primary">Login</button></a>
-        </div>
-    </div>
-    <div class="d-flex flex-row justify-content-between h-100">
-        <div id="custom-main" class=" container w-md-75 pt-3 text-white ">
-            <h1 class="text-center" style="font-family: Arial, sans-serif;font-weight: 300;">Student Profile</h1>
-            <div class= "d-flex flex-row justify-content-center align-items-center gap-3 pt-3 bg-dark rounded-3 p-1 mt-3">
-                <img src="images/user.png" alt="student" class="img-fluid rounded-circle w-sm-25 h-sm-25"
-                    style="max-width: 100px; height: auto;">
-                <div class="d-flex flex-column justify-content-center align-items-start ">
-                    <p>Student Name: اسم الطالب الثلاثي</p>
-                    <p>Student ID: 123456</p>
-                    <p>Student Major: Computer Science</p>
-                    <p>Education Year: L2</p>
+            <div id="custom-main" class=" container w-md-75 pt-3 text-white m-1 m-md-5 mt-0 mt-md-0">
+                <p class="heading fs-1 w-md-25">Student Profile</p>
+                <div
+                    class="d-flex flex-row justify-content-center align-items-center gap-3 pt-3 bg-dark rounded-3 p-1 mt-3">
+                    <img src="images/user.png" alt="student" class="img-fluid rounded-circle w-sm-25 h-sm-25"
+                        style="max-width: 100px; height: auto;">
+                    <div class="d-flex flex-column justify-content-center align-items-start ">
+                        <p>Student Name: اسم الطالب الثلاثي</p>
+                        <p>Student ID: 123456</p>
+                        <p>Student Major: Computer Science</p>
+                        <p>Education Year: L2</p>
+                    </div>
+                    <button type="button" id="sidebar-button"
+                        class="btn btn-dark position-absolute top-0 end-0 m-0 d-block d-md-none "
+                        style="background:none; border: none;"><img src="images/menu-black.png" alt=""
+                            style="width: 40px;">
+                    </button>
                 </div>
-                <button type="button" id="sidebar-button"
-                    class="btn btn-dark position-absolute top-0 end-0 m-1 d-block d-md-none "
-                    style="background:none; border: none;"><img src="images/menu-black.png" alt="" style="width: 40px;">
-                </button>
+
+
             </div>
-
-            
+            <div id="sidebar" class="container w-25 bg-dark d-none d-md-block mw-50 ">
+                <ul class="nav flex-column gap-3 pt-3">
+                    <button type="button" id="sidebar-button2"
+                        class="btn btn-dark position-absolute top-0 end-0 m-1 d-block d-md-none "
+                        style="background:none; border: none;"><img src="images/menu-black.png" alt=""
+                            style="width: 40px;">
+                    </button>
+                    <li class="nav-item">
+                        <a class="nav-link link-primary active" aria-current="page"
+                            href="student-interface.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="marks.html">Marks</a>
+                    </li>
+            </div>
         </div>
-        <div id="sidebar" class="container w-25 bg-dark d-none d-md-block mw-50">
-            <ul class="nav flex-column gap-3 pt-3">
-                <button type="button" id="sidebar-button2"
-                    class="btn btn-dark position-absolute top-0 end-0 m-1 d-block d-md-none "
-                    style="background:none; border: none;"><img src="images/menu-black.png" alt="" style="width: 40px;">
-                </button>
-                <li class="nav-item">
-                    <a class="nav-link link-primary active" aria-current="page"
-                        href="student-interface.html">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-light" href="#">Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-light" href="#">Marks</a>
-                </li>
-        </div>
-    </div>
-
+    </main>
+    <footer class=" text-white text-center p-1 " style="font-size: 10px; background-color: #1c3b7d;position: relative;">
+        Copyright &copy; 2025<br>Developed by Hussein Rashid and Kassem Omran
+    </footer>
 
 
     <script>
@@ -112,7 +129,7 @@
         document.getElementById('sidebar-button2').addEventListener('click', function () {
             document.getElementById('sidebar').classList.toggle('w-25');
             document.getElementById('sidebar').classList.toggle('d-none');
-            
+
             document.getElementById('custom-main').classList.remove('d-none');
         });
     </script>
