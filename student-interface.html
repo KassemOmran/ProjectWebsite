@@ -25,6 +25,7 @@
             margin: 0;
             display: flex;
             flex-direction: column;
+
         }
 
         .heading {
@@ -34,13 +35,20 @@
             padding-bottom: 5px;
         }
 
-        
+
 
         #sidebar {
             height: 100vh;
+            position: relative;
         }
-        main{
-            flex:1;
+
+        main {
+            flex: 1;
+            position: relative;
+        }
+
+        #custom-main {
+            position: relative;
         }
     </style>
     <title>Document</title>
@@ -76,8 +84,7 @@
         <div class="d-flex flex-row justify-content-between">
             <div id="custom-main" class=" container w-md-75 pt-3 text-white m-1 m-md-5 mt-0 mt-md-0">
                 <p class="heading fs-1 w-md-25">Student Profile</p>
-                <div
-                    class="d-flex flex-row justify-content-center align-items-center gap-3 pt-3 bg-dark rounded-3 p-1 mt-3">
+                <div class="d-flex flex-column flex-md-row  justify-content-center align-items-center gap-3 pt-3 bg-dark rounded-3 p-1 mt-3">
                     <img src="images/user.png" alt="student" class="img-fluid rounded-circle w-sm-25 h-sm-25"
                         style="max-width: 100px; height: auto;">
                     <div class="d-flex flex-column justify-content-center align-items-start ">
@@ -86,13 +93,12 @@
                         <p>Student Major: Computer Science</p>
                         <p>Education Year: L2</p>
                     </div>
-                    <button type="button" id="sidebar-button"
-                        class="btn btn-dark position-absolute top-0 end-0 m-0 d-block d-md-none "
-                        style="background:none; border: none;"><img src="images/menu-black.png" alt=""
-                            style="width: 40px;">
-                    </button>
-                </div>
 
+                </div>
+                <button type="button" id="sidebar-button"
+                    class="btn btn-dark position-absolute top-0 end-0 m-0 d-block d-md-none "
+                    style="background:none; border: none;"><img src="images/menu-black.png" alt="" style="width: 40px;">
+                </button>
 
             </div>
             <div id="sidebar" class="container w-25 bg-dark d-none d-md-block mw-50 ">

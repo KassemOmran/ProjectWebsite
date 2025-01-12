@@ -36,7 +36,7 @@
 </head>
 
 <body>
-  <main></main>
+  <main>
     <div class="container-fluid text-white p-2 p-md-3" style="background-color:#1c3b7d;">
         <div class="d-flex justify-content-start flex-row align-items-center gap-3 p-2">
             <img src="images/science.jpg" alt="Faculty-logo" class=" img-fluid rounded-circle w-sm-25 h-sm-25"
@@ -62,18 +62,18 @@
     </div>
     <div class="container d-flex flex-column text-white mt-5">
 
-        <div class="d-flex justify-content-center align-items-center flex-column">
+        <form method="get" class="d-flex justify-content-center align-items-center flex-column">
             <div class="mb-3">
-                <label for="basic-url" class="form-label">Enter you username:</label>
-                <input type="text" class="form-control" id="username" placeholder="username" required>
+                <label for="username" class="form-label">Enter you username:</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="username" autocomplete="on" required>
             </div>
             <div class="mb-3">
-                <label for="basic-url" class="form-label">Enter you password:</label>
-                <input type="password" class="form-control" id="password" placeholder="password" required>
+                <label for="password" class="form-label">Enter you password:</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
 
             </div>
-            <a href="login.html"><button type="button" class="btn btn-primary">Login</button></a>
-        </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
         <div class="accordion mt-5 mb-5" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -95,7 +95,7 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Your account password is the number of your libanpost registration receipt (رقم الوصل) 
+                  Your account password is the id of your libanpost registration receipt (رقم الوصل) 
                 </div>
               </div>
             </div>

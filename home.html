@@ -41,7 +41,7 @@
             font-weight: lighter;
             font-size: 40px;
             border-bottom: 2px solid white;
-        
+
             padding-bottom: 5px;
         }
 
@@ -54,53 +54,14 @@
         }
 
         .card-container {
+            padding-top: 25px 10px 0px 10px ;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 40px;
             width: 80%;
         }
 
-        @media (max-width: 1200px) {
-            .card-container {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 900px) {
-            .card-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .card-container {
-                gap: 2px;
-                /* Reduced gap between cards */
-                grid-template-columns: repeat(2, 1fr);
-                /* 2 cards per row */
-                width: 95%;
-                /* Slightly reduce the container width */
-                margin: 0 auto;
-                /* Center the container */
-            }
-
-            .flip-card {
-                width: 100%;
-                /* Make sure cards fill the available space */
-                height: 250px;
-                /* Adjust the height if necessary */
-            }
-
-            #body-text {
-                margin: 20px 20px 10px 20px;
-                font-size: 15px;
-            }
-
-            .heading {
-                font-size: 18px;
-            }
-        }
-
+        
 
         .flip-card {
             width: 200px;
@@ -130,18 +91,30 @@
         }
 
         .flip-card-front {
-            background-color: rgb(6, 133, 200,0.8);
+            background-color: rgb(6, 133, 200, 1);
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 10px;
             font-size: 18px;
-            
+
+            .back-synopsis{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center ;
+                gap: 25px;
+                img {
+                    width: 6vw;
+                }
+            }
+
+
         }
 
         .flip-card-back {
-            background-color: rgb(6, 133, 191,0.8);
+            background-color: rgb(6, 133, 191, 0.8);
             color: white;
             display: flex;
             justify-content: center;
@@ -161,6 +134,59 @@
             margin-top: auto;
             /* Ensures footer stays at the bottom of the screen */
         }
+        @media (max-width: 1200px) {
+            .card-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card-container {
+                gap: 2px;
+                /* Reduced gap between cards */
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 cards per row */
+                width: 95%;
+                /* Slightly reduce the container width */
+                margin: 0 auto;
+                /* Center the container */
+            }
+
+            .flip-card {
+                width: 48vw;
+                /* Make sure cards fill the available space */
+                height: 250px;
+                /* Adjust the height if necessary */
+            }
+
+            #body-text {
+                margin: 20px 20px 10px 20px;
+                font-size: 15px;
+            }
+
+            .heading {
+                font-size: 18px;
+            }
+            .flip-card-front {
+            
+            .back-synopsis{
+                
+                gap: 2px;
+                img {
+                    width: 20vw;
+                }
+            }
+
+
+        }
+        }
+
     </style>
     <title>Document</title>
 </head>
@@ -214,8 +240,11 @@
             <div class="card-container">
                 <div class="flip-card">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front d-flex justify-content-center align-items-center flex-column gap-4">
-                            <div class="back-synopsis">Mathematics</div>
+                        <div class="flip-card-front">
+                            <div class="back-synopsis">
+                                <img src="images/math-logo-white.png" alt="">
+                                <p>Mathematics</p>
+                            </div>
                         </div>
                         <div class="flip-card-back">
                             <div class="back-synopsis">Card 1: Back Content</div>
@@ -225,7 +254,10 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <div class="back-synopsis">Computer Science</div>
+                            <div class="back-synopsis">
+                                <img src="images/Computer-science-white.png" alt="">
+                                <p>Computer Science</p>
+                            </div>
                         </div>
                         <div class="flip-card-back">
                             <div class="back-synopsis">Card 2: Back Content</div>
@@ -235,7 +267,10 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <div class="back-synopsis">Statistics</div>
+                            <div class="back-synopsis">
+                                <img src="images/statistics-white.png" alt="">
+                                <p>Statistics</p>
+                            </div>
                         </div>
                         <div class="flip-card-back">
                             <div class="back-synopsis">Card 3: Back Content</div>
@@ -245,7 +280,10 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <div class="back-synopsis">Physics</div>
+                            <div class="back-synopsis">
+                                <img src="images/physics-white.png" alt="">
+                                <p>Physics</p>
+                            </div>
                         </div>
                         <div class="flip-card-back">
                             <div class="back-synopsis">Card 4: Back Content</div>
@@ -255,7 +293,10 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <div class="back-synopsis">Electronics</div>
+                            <div class="back-synopsis">
+                                <img src="images/cpu-white.png" alt="">
+                                <p>Electronics</p>
+                            </div>
                         </div>
                         <div class="flip-card-back">
                             <div class="back-synopsis">Card 5: Back Content</div>
@@ -265,17 +306,10 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <div class="back-synopsis">Natural sciences</div>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="back-synopsis">Card 6: Back Content</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="back-synopsis">Geology</div>
+                            <div class="back-synopsis">
+                                <img src="images/earth-white.png" alt="">
+                                <p>Geology</p>
+                            </div>
                         </div>
                         <div class="flip-card-back">
                             <div class="back-synopsis">Card 7: Back Content</div>
@@ -285,7 +319,10 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <div class="back-synopsis">Biology</div>
+                            <div class="back-synopsis">
+                                <img src="images/biology-white.png" alt="">
+                                <p>Biology</p>
+                            </div>
                         </div>
                         <div class="flip-card-back">
                             <div class="back-synopsis">Card 8: Back Content</div>
@@ -295,7 +332,10 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <div class="back-synopsis">Chemistry</div>
+                            <div class="back-synopsis">
+                                <img src="images/test-tube-white.png" alt="">
+                                <p>Chemistry</p>
+                            </div>
                         </div>
                         <div class="flip-card-back">
                             <div class="back-synopsis">Card 9: Back Content</div>
@@ -305,7 +345,10 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <div class="back-synopsis">Biochemistry</div>
+                            <div class="back-synopsis">
+                                <img src="images/biotech-white.png" alt="">
+                                <p>Biochemistry</p>
+                            </div>
                         </div>
                         <div class="flip-card-back">
                             <div class="back-synopsis">Card 10: Back Content</div>
