@@ -1,0 +1,29 @@
+[
+    {
+        "id": "123456",
+        "name": "اسم الطالب الثلاثي",
+        "password": "1234",
+        "major": "Computer Science",
+        "year": "LS1",
+        "courses": [
+            {
+                "code": "M1100",
+                "name": "Algebra I",
+                "semester": "S1",
+                "mark": 85
+            },
+            {
+                "code": "M1101",
+                "name": "Analysis I",
+                "semester": "S1",
+                "mark": 50
+            },
+            {
+                "code": "P1100",
+                "name": "Mechanics",
+                "semester": "S1",
+                "mark": 50
+            }
+        ]
+    }
+]
