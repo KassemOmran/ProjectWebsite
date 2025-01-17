@@ -4,7 +4,7 @@ Concept:
 As a faculty website for the first branch of the faculty of sciences, it provides a brief introduction about the faculty along with its main purpose of serving registred students with info about their courses and their marks.
 
 Key features: 
-- Set of well structured set of html pages providing the sufficient needs and proper functionalities.
+- Set of well structured html pages providing the sufficient needs and proper functionalities.
 - CSS layout to empower the website design based on bootstrap while still mainting the educational theme of the website
 - Functional navigation system
 - Functional login/logout and student profile features
