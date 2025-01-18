@@ -1,0 +1,164 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+body {
+    background-repeat: no-repeat;
+    background-image: url('images/ULFS-HadathCampusBldgback1.1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.faculty-logo{
+    max-width: 100px;
+    height: auto;
+}
+.heading {
+    font-weight: lighter;
+    font-size: 40px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    font-family: 'Segoe UI', sans-serif;
+}
+main {
+    flex: 1;
+    position: relative;
+}
+footer {
+    background-color: #1c3b7d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10px;
+    margin-top: auto;
+    position: relative;
+}
+/*Home page section*/
+#home-body-text {
+    margin: 20px 75px 10px 75px;
+    font-size: 18px;
+}
+#card-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+}
+.card-container {
+    padding-top: 25px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 80%;
+}
+.flip-card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front,.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+.flip-card-front {
+    background-color: #eeaf16;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    .back-synopsis {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        img {
+            width: 6vw;
+        }
+    }
+}
+.flip-card-back {
+    background-color: #e2d0a5;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transform: rotateY(180deg);
+    font-size: 14px;
+}
+@media (max-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 900px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .card-container {
+        gap: 2px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        margin: 0 auto;
+    }
+    .flip-card {
+        width: 48vw;
+        height: 250px;
+    }
+    #home-body-text {
+        margin: 20px 20px 10px 20px;
+        font-size: 15px;
+    }
+    .heading {
+        font-size: 18px;
+    }
+    .flip-card-front {
+        .back-synopsis {
+            gap: 2px;
+            img {
+                width: 20vw;
+            }
+        }
+
+
+    }
+}
+/*Contact Us*/
+.contact{
+    background-color: rgb(6, 133, 191,0.8) ;
+    
+}
+/*Student interface section*/
+#sidebar {
+    min-height: 100vh;
+    position: relative;
+}
+#custom-main {
+    position: relative;
+}
+
