@@ -6,7 +6,11 @@ $(document).ready(function () {
     }
     else{
         $('#login-element').attr('hidden',false)
-        $('#si-nav-link').attr('href','login.html')
+        $('#si-nav-link').on('click',function(f){
+            f.preventDefault();
+            window.location.href = 'login.html';
+            alert('Please login to access student interface.')
+        })
     }
     
     $('#logout-button').on('click',function(e){
