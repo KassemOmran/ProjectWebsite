@@ -3,7 +3,7 @@ $(document).ready(function () {
     if(localStorage.getItem('loggedIn')==='true'){
         $('#logout-element').attr('hidden',false)
         if($(window).width()>=400){
-            $('#logout-dropdown').append(+user.id);
+            $('#logout-dropdown').append(' Id: '+user.id);
         }
     }
     else{
