@@ -11,84 +11,96 @@
                 "description": "Algebra I",
                 "semester": "S1",
                 "credits": 6,
-                "mark": 85
+                "mark": 85,
+                "status": "obtained"
             },
             {
                 "code": "M1101",
                 "description": "Analysis I",
                 "semester": "S1",
                 "credits": 6,
-                "mark": 50
+                "mark": 50,
+                "status": "obtained"
             },
             {
                 "code": "P1100",
                 "description": "Mechanics",
                 "semester": "S1",
                 "credits": 6,
-                "mark": 50
+                "mark": 50,
+                "status": "obtained"
             },
             {
                 "code": "P1101",
                 "description": "Electricity & Magnetism",
                 "semester": "S1",
                 "credits": 6,
-                "mark": 50
+                "mark": 50,
+                "status": "obtained"
             },
             {
                 "code": "S1100",
                 "description": "Statistics",
                 "semester": "S1",
                 "credits": 3,
-                "mark": 50
+                "mark": 50,
+                "status": "obtained"
             },
             {
                 "code": "I1100",
                 "description": "Introduction to Computer Science",
                 "semester": "S1",
                 "credits": 3,
-                "mark": 50
+                "mark": 50,
+                "status": "obtained"
             },
             {
                 "code": "M1102",
                 "description": "Algebra II",
                 "semester": "S2",
                 "credits": 6,
-                "mark": 50
+                "mark": 50,
+                "status": "current"
             },
             {
                 "code": "M1103",
                 "description": "Algebra III",
                 "semester": "S2",
                 "credits": 6,
-                "mark": 50
+                "mark": 50,
+                "status": "current"
             },
             {
                 "code": "M1104",
                 "description": "Analysis II",
                 "semester": "S2",
                 "credits": 6,
-                "mark": 50
+                "mark": 50,
+                "status": "current"
             },
             {
                 "code": "M1105",
                 "description": "Analysis III",
                 "semester": "S1",
                 "credits": 6,
-                "mark": 50
+                "mark": 50,
+                "status": "current"
             },
             {
                 "code": "M1106",
-                "description": "Introduction to Computer Science",
+                "description": "Analysis IV",
                 "semester": "S1",
                 "credits": 6,
-                "mark": 50
+                "mark": 50,
+                "status": "current"
             },
             {
                 "code": "I1101",
                 "description": "",
                 "semester": "S1",
                 "credits": 6,
-                "mark": 50
+                "mark": 50,
+                "status": "current"
             }
 
         ]
