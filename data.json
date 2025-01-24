@@ -59,7 +59,7 @@
                 "description": "Algebra II",
                 "semester": "S2",
                 "credits": 6,
-                "mark": 50,
+                "mark": "-",
                 "status": "current"
             },
             {
@@ -67,7 +67,7 @@
                 "description": "Algebra III",
                 "semester": "S2",
                 "credits": 6,
-                "mark": 50,
+                "mark": "-",
                 "status": "current"
             },
             {
@@ -75,7 +75,7 @@
                 "description": "Analysis II",
                 "semester": "S2",
                 "credits": 6,
-                "mark": 50,
+                "mark": "-",
                 "status": "current"
             },
             {
@@ -83,7 +83,7 @@
                 "description": "Analysis III",
                 "semester": "S1",
                 "credits": 6,
-                "mark": 50,
+                "mark": "-",
                 "status": "current"
             },
             {
@@ -91,15 +91,15 @@
                 "description": "Analysis IV",
                 "semester": "S1",
                 "credits": 6,
-                "mark": 50,
+                "mark": "-",
                 "status": "current"
             },
             {
                 "code": "I1101",
-                "description": "",
+                "description": "Introduction to Programming",
                 "semester": "S1",
                 "credits": 6,
-                "mark": 50,
+                "mark": "-",
                 "status": "current"
             }
 
