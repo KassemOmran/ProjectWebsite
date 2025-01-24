@@ -2,7 +2,7 @@ $(document).ready(function () {
     const user =JSON.parse(localStorage.getItem('loggedInUser'));
     if(localStorage.getItem('loggedIn')==='true'){
         $('#logout-element').attr('hidden',false)
-        if($(window).width()>=400){
+        if($(window).width()>=450){
             $('#logout-dropdown').append(' Id: '+user.id);
         }
     }
