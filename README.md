@@ -1,7 +1,3 @@
-**Note: Since the project is frontend, the only valid credentials are:**
-uaername: 123456
-password: 1234
-
 This website is done as a project for the web development course ,I2201 LS2 Lebanese University, by Hussein Rachid and Kassem Omran.
 
 Concept: 
