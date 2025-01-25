@@ -39,7 +39,7 @@ $(document).ready(function () {
             coursesContainer.append('<p>No courses available.</p>');
         }
     }
-    displayCourses('all');
+    displayCourses('current');
     filterSelect.on('change', function () {
         var filter = $(this).val();
         displayCourses(filter);

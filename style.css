@@ -128,7 +128,7 @@ footer {
     }
     .flip-card {
         width: 48vw;
-        height: 250px;
+        height: 300px;
         margin-bottom: 10px;
     }
     #home-body-text {
@@ -147,6 +147,19 @@ footer {
         }
 
 
+    }
+    .flip-card-back {
+        background-color: #e2d0a5;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        transform: rotateY(180deg);
+        font-size: 12px;
+    }
+    body{
+        font-size: 12px;
     }
 }
 /*Contact Us*/
