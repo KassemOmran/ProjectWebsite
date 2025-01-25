@@ -1,4 +1,4 @@
-**Note: Since the project is frontend, the onlyt valid credentials are:**
+**Note: Since the project is frontend, the only valid credentials are:**
 uaername: 123456
 password: 1234
 
