@@ -4,7 +4,7 @@ $(document).ready(function () {
     const filterSelect = $('#course-filter');
 
     function displayCourses(filter) {
-        coursesContainer.empty(); // Clear the courses container
+        coursesContainer.empty();
 
         if (user && user.courses) {
             let filteredCourses;
@@ -39,13 +39,9 @@ $(document).ready(function () {
             coursesContainer.append('<p>No courses available.</p>');
         }
     }
-
-    // Initial display of all courses
     displayCourses('all');
-
-    // Update courses when the filter changes
     filterSelect.on('change', function () {
-        var filter = $(this).val(); // Get selected filter value
+        var filter = $(this).val();
         displayCourses(filter);
     });
 });
