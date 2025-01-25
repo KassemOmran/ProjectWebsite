@@ -1,3 +1,11 @@
+
+> [!IMPORTANT]
+> The only valid credentials are <br>
+> username: 123456 <br>
+> password: 1234
+
+# About the project
+
 This website is done as a project for the web development course ,I2201 LS2 Lebanese University, by Hussein Rachid and Kassem Omran.
 
 Concept: 
