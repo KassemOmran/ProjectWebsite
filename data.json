@@ -58,7 +58,7 @@
                 "code": "M1102",
                 "description": "Algebra II",
                 "semester": "S2",
-                "credits": 6,
+                "credits": 3,
                 "mark": "-",
                 "status": "current"
             },
@@ -90,7 +90,7 @@
                 "code": "M1106",
                 "description": "Analysis IV",
                 "semester": "S1",
-                "credits": 6,
+                "credits": 3,
                 "mark": "-",
                 "status": "current"
             },
