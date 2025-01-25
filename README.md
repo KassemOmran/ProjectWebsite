@@ -1,3 +1,4 @@
+[View Issues](https://github.com/KassemOmran/ProjectWebsite/issues/2)
 This website is done as a project for the web development course ,I2201 LS2 Lebanese University, by Hussein Rachid and Kassem Omran.
 
 Concept: 
