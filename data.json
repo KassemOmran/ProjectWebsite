@@ -81,7 +81,7 @@
             {
                 "code": "M1105",
                 "description": "Analysis III",
-                "semester": "S1",
+                "semester": "S2",
                 "credits": 6,
                 "mark": "-",
                 "status": "current"
@@ -89,7 +89,7 @@
             {
                 "code": "M1106",
                 "description": "Analysis IV",
-                "semester": "S1",
+                "semester": "S2",
                 "credits": 3,
                 "mark": "-",
                 "status": "current"
@@ -97,7 +97,7 @@
             {
                 "code": "I1101",
                 "description": "Introduction to Programming",
-                "semester": "S1",
+                "semester": "S2",
                 "credits": 6,
                 "mark": "-",
                 "status": "current"
